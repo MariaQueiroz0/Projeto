@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - EcoAção</title>
+  <link rel="stylesheet" href="Projeto2.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <h1>EcoAção</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="produtos.html">Produtos/Serviços</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Cadastro de Ação Climática</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome da Ação:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="valor">Valor (R$):</label>
+        <input type="number" id="valor" name="valor" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+        <label for="fornecedor">Fornecedor:</label>
+        <input type="text" id="fornecedor" name="fornecedor" required>
+
+        <label for="email">Email do Fornecedor:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone do Fornecedor:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <div class="form-buttons">
+          <button type="submit" class="cta-button">Enviar</button>
+          <button type="reset" class="reset-button">Apagar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoAção. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
