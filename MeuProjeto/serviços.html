@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Serviços Ambientais</title>
+    <link rel="stylesheet" href="Projeto2.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4faf6;
+      margin: 0;
+      padding: 40px;
+      color: #1d5b69;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      color: #244f67;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .tab-button {
+      padding: 10px 20px;
+      background-color: #d0f0c0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .tab-button:hover {
+      background-color: #a3d9a5;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: #d0f0c0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .tab-content h2 {
+      color: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nossos Serviços</h1>
+    <p>Atividades e iniciativas ambientais que promovem um mundo mais verde</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-button" onclick="showTab('eventos')">Agenda de Eventos</button>
+    <button class="tab-button" onclick="showTab('clima')">Clima e Previsões</button>
+    <button class="tab-button" onclick="showTab('energia')">Energia Sustentável</button>
+    <button class="tab-button" onclick="showTab('agricultura')">Agricultura Sustentável</button>
+  </div>
+
+  <div id="eventos" class="tab-content">
+    <h2>Agenda de Eventos Verdes</h2>
+    <p>Divulgação de ações como mutirões de limpeza, plantio de árvores e workshops sobre sustentabilidade.</p>
+  </div>
+
+  <div id="clima" class="tab-content">
+    <h2>Clima e Previsões</h2>
+    <p>Informações sobre o clima local e alertas de condições extremas para planejamento ambiental.</p>
+  </div>
+
+  <div id="energia" class="tab-content">
+    <h2>Energia Sustentável</h2>
+    <p>Dicas e projetos sobre o uso de energia limpa e renovável para residências e empresas.</p>
+  </div>
+
+  <div id="agricultura" class="tab-content">
+    <h2>Agricultura Sustentável</h2>
+    <p>Práticas agrícolas que respeitam o meio ambiente e aumentam a produtividade sem prejudicar o solo.</p>
+  </div>
+
+  <script>
+    // Função para exibir o conteúdo correspondente ao botão clicado
+    function showTab(tabId) {
+      // Oculta todas as abas
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      // Exibe a aba correspondente
+      const activeTab = document.getElementById(tabId);
+      activeTab.classList.add('active');
+    }
+
+    // Exibe a primeira aba ao carregar a página
+    showTab('eventos');
+  </script>
+
+</body>
+</html>
