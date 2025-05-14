@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - EcoAção</title>
+  <link rel="stylesheet" href="Projeto2.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <h1 data-aos="fade-down">EcoAção</h1>
+      <ul>
+        <li><a href="index.html" data-aos="fade-left" data-aos-delay="100">Home</a></li>
+        <li><a href="sobre.html" data-aos="fade-left" data-aos-delay="200">Sobre</a></li>
+        <li><a href="cadastro.html" data-aos="fade-left" data-aos-delay="300">Cadastro</a></li>
+        <li><a href="serviços.html" data-aos="fade-left" data-aos-delay="400">Serviços</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="form-section" data-aos="fade-up">
+      <h2 data-aos="zoom-in" data-aos-delay="100">Cadastro de Ação Climática</h2>
+      <form action="#" method="post">
+        <label for="nome" data-aos="fade-right">Nome da Ação:</label>
+        <input type="text" id="nome" name="nome" required data-aos="fade-left" />
+
+        <label for="valor" data-aos="fade-right">Valor (R$):</label>
+        <input type="number" id="valor" name="valor" required data-aos="fade-left" data-aos-delay="50" />
+
+        <label for="descricao" data-aos="fade-right">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" required data-aos="fade-left" data-aos-delay="100"></textarea>
+
+        <label for="fornecedor" data-aos="fade-right">Fornecedor:</label>
+        <input type="text" id="fornecedor" name="fornecedor" required data-aos="fade-left" data-aos-delay="150" />
+
+        <label for="email" data-aos="fade-right">Email do Fornecedor:</label>
+        <input type="email" id="email" name="email" required data-aos="fade-left" data-aos-delay="200" />
+
+        <label for="telefone" data-aos="fade-right">Telefone do Fornecedor:</label>
+        <input type="tel" id="telefone" name="telefone" required data-aos="fade-left" data-aos-delay="250" />
+
+        <div class="form-buttons" data-aos="zoom-in-up" data-aos-delay="300">
+          <button type="submit" class="cta-button">Enviar</button>
+          <button type="reset" class="reset-button">Apagar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up" data-aos-delay="100">
+    <p>&copy; 2025 EcoAção. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
